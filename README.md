@@ -9,6 +9,10 @@ A new Flutter project.<br>
 
 This project is a starting point for a Flutter application.
 
+<br>
+# The blog reffred is <br>
+[yolo](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)

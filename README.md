@@ -1,7 +1,9 @@
-# blog
-<<<<<<< HEAD
+# Blog
+
+# Flutter App for YOLO
 
 A new Flutter project.
+
 
 ## Getting Started
 
@@ -17,4 +19,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 =======
 Flutter App for YOLO
->>>>>>> 380d4c86440256687dd29df1a8ed8993d243c24f
+

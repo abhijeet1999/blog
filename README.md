@@ -2,7 +2,7 @@
 
 # Flutter App for YOLO
 
-A new Flutter project.
+A new Flutter project.<br>
 <img src="https://raw.githubusercontent.com/abhijeet1999/blog/master/1.jpeg" width="400" height="790"> <img src="https://raw.githubusercontent.com/abhijeet1999/blog/master/2.jpeg" width="400" height="790">
 
 ## Getting Started

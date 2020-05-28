@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 class Yolo extends StatefulWidget {
   @override
   _YoloState createState() => _YoloState();
@@ -26,29 +27,36 @@ class _YoloState extends State<Yolo> {
                       height: 330,
                       width: 730,
                       decoration: BoxDecoration(
-                        color: Colors.teal[400],
+                        color: Colors.lightBlueAccent,
                         image: DecorationImage(
                           image: AssetImage("images/yolo2.png"),
                         ),
                       ),
                     ),
                     Container(
-                      height: 600,
+                      height: 630,
                       width: 730,
                       decoration: BoxDecoration(
-                        color: Colors.teal[400],
+                        color: Colors.lightBlueAccent,
                       ),
                       child: Column(
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-                              SizedBox(width: 50),
+                              SizedBox(width: 70),
                               Text('What is YOLO ?',
                                   style: TextStyle(
                                       fontSize: 45,
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold)),
                             ],
+                          ),
+                          SizedBox(
+                            width: 200,
+                            height: 10,
+                            child: Divider(
+                              color: Colors.black,
+                            ),
                           ),
                           SizedBox(height: 20),
                           Row(
@@ -78,139 +86,110 @@ class _YoloState extends State<Yolo> {
                               )
                             ],
                           ),
-                          Row(
-                            children: <Widget>[
-                              SizedBox(width: 5),
-                              RichText(
-                                text: TextSpan(
-                                  children: <TextSpan>[
-                                    TextSpan(
-                                        text:
-                                            ' Its an object detector that uses features  ',
-                                        style: TextStyle(
-                                            fontSize: 20, color: Colors.black)),
-                                  ],
-                                ),
-                              )
-                            ],
+                          SizedBox(height: 5),
+                          Text(
+                            '''Its an object detector that uses features learned by a deep convolutional neural network to detect an object.''',
+                            style: new TextStyle(
+                                fontSize: 25.0, color: Colors.black),
+                            // textDirection: TextDirection.ltr,
                           ),
+                          SizedBox(height: 60),
                           Row(
                             children: <Widget>[
                               SizedBox(width: 5),
-                              Text(
-                                " learned by a deep convolutional neural ",
-                                textDirection: TextDirection.ltr,
-                                style: new TextStyle(
-                                    fontSize: 20.0, color: Colors.black),
-                                maxLines: 2,
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: <Widget>[
-                              SizedBox(width: 5),
-                              Text(
-                                " network to detect an object.   ",
-                                textDirection: TextDirection.ltr,
-                                style: new TextStyle(
-                                    fontSize: 20.0, color: Colors.black),
-                                maxLines: 2,
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 20),
-                          Row(
-                            children: <Widget>[
-                              SizedBox(width: 5),
-                              Text('Prerequisite',
-                                  style: TextStyle(
-                                      fontSize: 35, color: Colors.black)),
-                              SizedBox(width: 20),
-                              IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward,
-                                  size: 50,
-                                ),
-                                tooltip: 'Click Me',
-                                onPressed: () {
+                              InkWell(
+                                child: Text('Prerequisite ->',
+                                    style: TextStyle(
+                                      fontSize: 35,
+                                      color: Colors.deepPurple,
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic,
+                                    )),
+                                onTap: () {
                                   Navigator.pushNamed(context, '/a');
                                 },
                               ),
+                              SizedBox(width: 20),
                             ],
                           ),
                           SizedBox(height: 20),
                           Row(
                             children: <Widget>[
                               SizedBox(width: 5),
-                              Text('Understanding YOLO',
-                                  style: TextStyle(
-                                      fontSize: 35, color: Colors.black)),
-                              SizedBox(width: 20),
-                              IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward,
-                                  size: 50,
-                                ),
-                                tooltip: 'Click Me',
-                                onPressed: () {
+                              InkWell(
+                                child: Text('Understanding YOLO ->',
+                                    style: TextStyle(
+                                      fontSize: 35,
+                                      color: Colors.deepPurple,
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic,
+                                    )),
+                                onTap: () {
                                   Navigator.pushNamed(context, '/b');
                                 },
                               ),
+                              SizedBox(width: 20),
                             ],
                           ),
                           SizedBox(height: 20),
                           Row(
                             children: <Widget>[
                               SizedBox(width: 5),
-                              Text('Network Architecture',
-                                  style: TextStyle(
-                                      fontSize: 35, color: Colors.black)),
-                              SizedBox(width: 20),
-                              IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward,
-                                  size: 50,
-                                ),
-                                tooltip: 'Click Me',
-                                onPressed: () {
+                              InkWell(
+                                child: Text('Network Architecture ->',
+                                    style: TextStyle(
+                                      fontSize: 35,
+                                      color: Colors.deepPurple,
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic,
+                                    )),
+                                onTap: () {
                                   Navigator.pushNamed(context, '/c');
                                 },
                               ),
+                              SizedBox(width: 20),
                             ],
                           ),
                           SizedBox(height: 20),
                           Row(
                             children: <Widget>[
                               SizedBox(width: 5),
-                              Text('Implementing Yolo',
-                                  style: TextStyle(
-                                      fontSize: 35, color: Colors.black)),
-                              SizedBox(width: 20),
-                              IconButton(
-                                icon: Icon(
-                                  Icons.arrow_forward,
-                                  size: 50,
-                                ),
-                                tooltip: 'Click Me',
-                                onPressed: () {
+                              InkWell(
+                                child: Text('Implementing Yolo ->',
+                                    style: TextStyle(
+                                      fontSize: 35,
+                                      color: Colors.deepPurple,
+                                      fontWeight: FontWeight.bold,
+                                      fontStyle: FontStyle.italic,
+                                    )),
+                                onTap: () {
                                   Navigator.pushNamed(context, '/d');
                                 },
                               ),
+                              SizedBox(width: 20),
                             ],
                           ),
-                           SizedBox(height: 20),
+                          SizedBox(height: 20),
                           InkWell(
-                            child: new Text('Reference Link',style: TextStyle(
-                                      fontSize: 25,color: Colors.red),),
-                            onTap: () => launch('https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/')
+                              child: new Text(
+                                'Reference Link',
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  color: Colors.deepOrange,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.italic,
+                                ),
+                              ),
+                              onTap: () => launch(
+                                  'https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/')),
+                          SizedBox(
+                            width: 150,
+                            height: 10,
+                            child: Divider(
+                              color: Colors.deepOrange,
+                            ),
                           ),
-                           SizedBox(
-                  width: 150,
-                  height: 10,
-                  child: Divider(
-                    color: Colors.red,
-                  ),
-                ),
+                          SizedBox(height: 30)
                         ],
                       ),
                     )

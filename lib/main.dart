@@ -1,4 +1,5 @@
 
+import 'package:blog/pages/p1.dart';
 import 'package:flutter/material.dart';
 import 'package:blog/body/about.dart';
 import 'package:blog/body/implement.dart';
@@ -18,6 +19,7 @@ void main() {
       '/b': (BuildContext context) => About(),
       '/c': (BuildContext context) => Network(),
       '/d': (BuildContext context) => Implement(),
+      '/e': (BuildContext context) => Page1(),
       }
 
 
